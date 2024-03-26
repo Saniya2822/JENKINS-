@@ -9,7 +9,6 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
-  shared_credentials_files = "~/.aws/credentials"
 }
 
 resource "aws_key_pair" "deployer" {
