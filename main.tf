@@ -1,14 +1,16 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
-      version = "5.42.0"
+      source  = "hashicorp/aws"
+      version = "5.40.0"
     }
   }
 }
 
 provider "aws" {
 
+  region = "ap-south-1"
+  
 }
 
 resource "aws_key_pair" "deployer" {
